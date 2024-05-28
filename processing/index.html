@@ -1,0 +1,22 @@
+<html>
+  </head>
+    <title>Processing.js</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.9.4/lib/p5.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.3/codemirror.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.3/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.3/mode/javascript/javascript.min.js"></script>
+  </head>
+  <body>
+    <h1>Processing.js</h1>
+    <canvas id="defaultCanvas" ></canvas>
+    <textarea id="editor"></textarea>
+    <p>Above  </p>
+    <script src="./sketch.js"></script>
+    <script>
+      var editor = CodeMirror.fromTextArea(document.getElementById("editor"), {
+        lineNumbers: true,
+        mode: "javascript"
+      });
+    </script>
+  </body>
+</html>
